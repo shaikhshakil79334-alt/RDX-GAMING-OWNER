@@ -1,0 +1,51 @@
+_AddClickEffectAt(button1);
+if (user.getText().toString().equals("")) {
+	((EditText)user).setError("User cannot be blank!");
+}
+else {
+	if (token.getText().toString().equals("")) {
+		((EditText)token).setError("Enter a password!");
+	}
+	else {
+		if (valid.getText().toString().equals("")) {
+			((EditText)valid).setError("Set expiry date!");
+		}
+		else {
+			if (Device.equals("")) {
+				SketchwareUtil.showMessage(getApplicationContext(), "Set the number of devices!");
+			}
+			else {
+				SketchwareUtil.hideKeyboard(getApplicationContext());
+				_ProgresbarShow("Key Generating...");
+				key = User.push().getKey();
+				map = new HashMap<>();
+				map.put("user", user.getText().toString());
+				map.put("pass", token.getText().toString());
+				map.put("status", "true");
+				map.put("access", Device);
+				map.put("key", key);
+				map.put("device", "null");
+				map.put("version", "null");
+				map.put("rgtime", new SimpleDateFormat("hh:mm - DD/MM/YYYY").format(cal.getTime()));
+				calendar1.add(Calendar.DAY_OF_MONTH, (int)(Double.parseDouble(valid.getText().toString())));
+				map.put("time", String.valueOf((long)(calendar1.getTimeInMillis())));
+				map.put("Validity", new SimpleDateFormat("hh:mm - DD/MM/YYYY").format(calendar1.getTime()));
+				User.child(key).updateChildren(map);
+				map.clear();
+				Timer = new TimerTask() {
+					@Override
+					public void run() {
+						runOnUiThread(new Runnable() {
+							@Override
+							public void run() {
+								_ProgresbarDimiss();
+								finish();
+							}
+						});
+					}
+				};
+				_timer.schedule(Timer, (int)(1000));
+			}
+		}
+	}
+}
