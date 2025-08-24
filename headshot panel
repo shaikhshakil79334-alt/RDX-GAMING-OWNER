@@ -1,0 +1,124 @@
+PopupMenu popup = new PopupMenu(AddUserActivity.this, linear30);
+			android.view.Menu menu = popup.getMenu();
+	
+	menu.add("24 Hours");
+	menu.add("7 Days");
+	menu.add("15 Days");
+	menu.add("30 Days");
+	popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+		
+						public boolean onMenuItemClick(android.view.MenuItem item) {
+								switch (item.getTitle().toString()) {
+										
+										case "24 Hours":
+				valid.setText("1");
+				textview10.setText("24 Hours");
+				return true;
+				case "7 Days":
+				valid.setText("7");
+				textview10.setText("7 Days");
+				return true;
+				case "15 Days":
+				valid.setText("15");
+				textview10.setText("15 Days");
+				return true;
+				case "30 Days":
+				valid.setText("30");
+				textview10.setText("30 Days");
+				return true;
+				
+										default: return false;
+								}
+						}
+				});
+	
+	
+	popup.show();}
+{
+			android.graphics.drawable.GradientDrawable SketchUi = new android.graphics.drawable.GradientDrawable();
+			int d = (int) getApplicationContext().getResources().getDisplayMetrics().density;
+			int clrs [] = {0xFFFFFFFF,0xFFFFFFFF};
+			SketchUi= new android.graphics.drawable.GradientDrawable(android.graphics.drawable.GradientDrawable.Orientation.LEFT_RIGHT, clrs);
+			SketchUi.setCornerRadius(d*15);
+			SketchUi.setStroke(d*0,0xFFFFFFFF);
+			linear4.setElevation(d*10);
+			android.graphics.drawable.RippleDrawable SketchUiRD = new android.graphics.drawable.RippleDrawable(new android.content.res.ColorStateList(new int[][]{new int[]{}}, new int[]{0xFFE0E0E0}), SketchUi, null);
+			linear4.setBackground(SketchUiRD);
+			linear4.setClickable(true);
+}
+
+
+{
+			android.graphics.drawable.GradientDrawable SketchUi = new android.graphics.drawable.GradientDrawable();
+			int d = (int) getApplicationContext().getResources().getDisplayMetrics().density;
+			int clrs [] = {0xFFFFFFFF,0xFFFFFFFF};
+			SketchUi= new android.graphics.drawable.GradientDrawable(android.graphics.drawable.GradientDrawable.Orientation.LEFT_RIGHT, clrs);
+			SketchUi.setCornerRadius(d*15);
+			SketchUi.setStroke(d*0,0xFFFFFFFF);
+			linear17.setElevation(d*10);
+			android.graphics.drawable.RippleDrawable SketchUiRD = new android.graphics.drawable.RippleDrawable(new android.content.res.ColorStateList(new int[][]{new int[]{}}, new int[]{0xFFE0E0E0}), SketchUi, null);
+			linear17.setBackground(SketchUiRD);
+			linear17.setClickable(true);
+}
+
+
+{
+			android.graphics.drawable.GradientDrawable SketchUi = new android.graphics.drawable.GradientDrawable();
+			int d = (int) getApplicationContext().getResources().getDisplayMetrics().density;
+			int clrs [] = {0xFFFFFFFF,0xFFFFFFFF};
+			SketchUi= new android.graphics.drawable.GradientDrawable(android.graphics.drawable.GradientDrawable.Orientation.LEFT_RIGHT, clrs);
+			SketchUi.setCornerRadius(d*15);
+			SketchUi.setStroke(d*0,0xFFFFFFFF);
+			linear5.setElevation(d*10);
+			android.graphics.drawable.RippleDrawable SketchUiRD = new android.graphics.drawable.RippleDrawable(new android.content.res.ColorStateList(new int[][]{new int[]{}}, new int[]{0xFFE0E0E0}), SketchUi, null);
+			linear5.setBackground(SketchUiRD);
+			linear5.setClickable(true);
+}
+
+
+{
+			android.graphics.drawable.GradientDrawable SketchUi = new android.graphics.drawable.GradientDrawable();
+			int d = (int) getApplicationContext().getResources().getDisplayMetrics().density;
+			int clrs [] = {0xFFFFFFFF,0xFFFFFFFF};
+			SketchUi= new android.graphics.drawable.GradientDrawable(android.graphics.drawable.GradientDrawable.Orientation.LEFT_RIGHT, clrs);
+			SketchUi.setCornerRadius(d*15);
+			SketchUi.setStroke(d*0,0xFFFFFFFF);
+			linear6.setElevation(d*10);
+			android.graphics.drawable.RippleDrawable SketchUiRD = new android.graphics.drawable.RippleDrawable(new android.content.res.ColorStateList(new int[][]{new int[]{}}, new int[]{0xFFE0E0E0}), SketchUi, null);
+			linear6.setBackground(SketchUiRD);
+			linear6.setClickable(true);
+}
+
+
+{
+			android.graphics.drawable.GradientDrawable SketchUi = new android.graphics.drawable.GradientDrawable();
+			int d = (int) getApplicationContext().getResources().getDisplayMetrics().density;
+			int clrs [] = {0xFFFFFFFF,0xFFFFFFFF};
+			SketchUi= new android.graphics.drawable.GradientDrawable(android.graphics.drawable.GradientDrawable.Orientation.LEFT_RIGHT, clrs);
+			SketchUi.setCornerRadius(d*15);
+			SketchUi.setStroke(d*0,0xFF607D8B);
+			linear16.setElevation(d*10);
+			android.graphics.drawable.RippleDrawable SketchUiRD = new android.graphics.drawable.RippleDrawable(new android.content.res.ColorStateList(new int[][]{new int[]{}}, new int[]{0xFFE0E0E0}), SketchUi, null);
+			linear16.setBackground(SketchUiRD);
+			linear16.setClickable(true);
+}
+
+
+{
+			android.graphics.drawable.GradientDrawable SketchUi = new android.graphics.drawable.GradientDrawable();
+			int d = (int) getApplicationContext().getResources().getDisplayMetrics().density;
+			int clrs [] = {0xFFFFFFFF,0xFFFFFFFF};
+			SketchUi= new android.graphics.drawable.GradientDrawable(android.graphics.drawable.GradientDrawable.Orientation.LEFT_RIGHT, clrs);
+			SketchUi.setCornerRadius(d*15);
+			SketchUi.setStroke(d*0,0xFF607D8B);
+			linear18.setElevation(d*10);
+			android.graphics.drawable.RippleDrawable SketchUiRD = new android.graphics.drawable.RippleDrawable(new android.content.res.ColorStateList(new int[][]{new int[]{}}, new int[]{0xFFE0E0E0}), SketchUi, null);
+			linear18.setBackground(SketchUiRD);
+			linear18.setClickable(true);
+}
+
+tablayout1.setupWithViewPager(viewpager1);
+tablayout1.setSelectedTabIndicatorColor(Color.TRANSPARENT);
+FragmentAdapter.setTabCount(2);
+viewpager1.setAdapter(FragmentAdapter);
+tablayout1.setTabTextColors(0xFFFFFFFF, 0xFFFFFFFF);
